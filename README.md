@@ -1,7 +1,7 @@
 README.md 
 🏙️ City Events Finder
 
-> INFO 520 Data Communications — GCP Cloud Infrastructure Project  
+> INFO 520 Data Communications — EXTRA CREDIT GCP Cloud Infrastructure Project  
 > *A serverless, load-balanced web application aggregating events across multiple APIs into a single unified view.*
 
 📌 Project Overview
