@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Project Title</title>
+  <style>
+    /* 1. CSS Variables for easy color & font customization */
+    :root {
+      --primary-color: #2563eb;
+      --primary-hover: #1d4ed8;
+      --bg-color: #f8fafc;
+      --surface-color: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --max-width: 960px;
+    }
+
+    /* 2. Basic Reset & Typography */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-main);
+      background-color: var(--bg-color);
+    }
+
+    /* 3. Navigation Bar */
+    header {
+      background-color: var(--surface-color);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-color);
+    }
+
+    /* 4. Main Layout & Hero Section */
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background-color: var(--surface-color);
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      margin-bottom: 3rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1.125rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: var(--primary-hover);
+    }
+
+    /* 5. Content Sections & Responsive Card Grid */
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--surface-color);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* 6. Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border-color);
+      background-color: var(--surface-color);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header>
+    <nav>
+      <a href="#" class="logo">CS-101 Project</a>
+      <ul class="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#features">Key Points</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Banner -->
+    <section class="hero">
+      <h1>Your Project Headline Goes Here</h1>
+      <p>A brief, clear subtitle summarizing the goal of your website, research topic, or portfolio project.</p>
+      <a href="#overview" class="btn">Explore Project</a>
+    </section>
+
+    <!-- Text Section -->
+    <section id="overview">
+      <h2>Project Overview</h2>
+      <p>Replace this paragraph with your introduction or thesis statement. Because this template uses semantic HTML5 tags and responsive CSS, it will automatically look clean on both laptops and mobile phones without needing external frameworks.</p>
+    </section>
+
+    <!-- 3-Column Card Grid -->
+    <section id="features">
+      <h2>Key Highlights</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>01. First Topic</h3>
+          <p>Use these cards to break down findings, methodologies, or individual project milestones into readable chunks.</p>
+        </article>
+        <article class="card">
+          <h3>02. Second Topic</h3>
+          <p>The CSS Grid automatically adjusts the number of columns based on the viewer's screen width.</p>
+        </article>
+        <article class="card">
+          <h3>03. Third Topic</h3>
+          <p>Change the <code>--primary-color</code> variable at the top of the CSS to match your school or topic theme.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion">
+      <h2>Summary &amp; References</h2>
+      <p>Add your final takeaways, citations, or team member credits here before submitting.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Your Name &bull; University Course Name</p>
+  </footer>
+
+</body>
+</html>
