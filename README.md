@@ -51,7 +51,7 @@ cd city-events-finder/app
 pip install -r requirements.txt
 2. Set Local Environment Variables
 export TICKETMASTER_API_KEY="your_local_key"
-export SEATGEEK_API_KEY="your_local_key"
+export SERPAPI_API_KEY="your_local_key"
 python main.py
 Access the app locally at http://localhost:8080.
 ☁️ Google Cloud Deployment
