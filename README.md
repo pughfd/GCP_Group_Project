@@ -38,7 +38,8 @@ Ticketmaster API     SeatGeek API      Open-Meteo Weather API
 │   └── deploy_cloudrun.sh   # Artifact Registry build & Cloud Run deployment
 ├── Dockerfile               # Container build configuration (Exposes Port 8080)
 ├── TROUBLESHOOTING.md       # Team incident log & resolution history
-└── README.md                # Project documentation
+└──README.md                # Project documentation
+ --savingtime.md
 🚀 Quick Start & Local Testing
 Prerequisites
 Python 3.11+
@@ -69,8 +70,13 @@ gcloud run deploy city-events-service \
     --min-instances 0 \
     --max-instances 5 \
     --set-secrets "TICKETMASTER_API_KEY=TICKETMASTER_API_KEY:latest,SEATGEEK_API_KEY=SEATGEEK_API_KEY:latest"
-👥 Team & Roles - TO BE UPDATED AFTER COMPLETION IF DIVISION CHANGES DURING COMPLETION
+👥 Team & Roles 
 Elisa Hartl:  Governance & Cloud Management (IAM Policies, Secret Manager Integration, Load Balancer NEG Wiring, Architecture Documentation).
 Franklin Pugh: Technical & Development (Flask Backend API Merging Logic, Dockerization, Artifact Registry Pipeline, Deployment Scripts).
 📜 License & Acknowledgments
 Built for INFO 520 Data Communications (Fall 2026) at Virginia Commonwealth University. Powered by Google Cloud Platform.
+Gemini assistance for Read.me template, html template full citation:
+Google. (2026, November 18).HTML5 and CSS starter template and frontend search interface for City Events Finder [Generative AI chat]. Gemini. https://gemini.google.com 
+"Write a clean, modern HTML5 and CSS starter template for an index.html university project"
+
+
