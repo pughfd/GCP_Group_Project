@@ -1,6 +1,6 @@
 MARK EACH: ✅ Resolved / ⏳ Open
 
-### ["the" Coupling Event Issue] ⏳ Open
+⏳### ["the" Coupling Event Issue] ⏳ Open
 - **Nov 18
 - **Component:** Decoupling python scripting (line )
 - **Error Log / Output:** Events with venue or title name start with "The" incorrectly coupled when actually distinct events
