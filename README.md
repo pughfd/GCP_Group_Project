@@ -24,7 +24,7 @@ GCP Cloud Run Service: city-events-app  ───► (Reads Keys via IAM) ──
 │
 ├───────────────────────┼───────────────────────┐
 ▼                       ▼                       ▼
-Ticketmaster API     SeatGeek API      Open-Meteo Weather API
+Ticketmaster API     Serp API Google Events      Open-Meteo Weather API
 
 
 📁 Repository Structure
@@ -39,7 +39,7 @@ Ticketmaster API     SeatGeek API      Open-Meteo Weather API
 ├── Dockerfile               # Container build configuration (Exposes Port 8080)
 ├── TROUBLESHOOTING.md       # Team incident log & resolution history
 └──README.md                # Project documentation
- --savingtime.md
+└──savingtime.md
 🚀 Quick Start & Local Testing
 Prerequisites
 Python 3.11+
@@ -70,9 +70,11 @@ gcloud run deploy city-events-service \
     --min-instances 0 \
     --max-instances 5 \
     --set-secrets "TICKETMASTER_API_KEY=TICKETMASTER_API_KEY:latest,SEATGEEK_API_KEY=SEATGEEK_API_KEY:latest"
+
 👥 Team & Roles 
 Elisa Hartl:  Governance & Cloud Management (IAM Policies, Secret Manager Integration, Load Balancer NEG Wiring, Architecture Documentation).
 Franklin Pugh: Technical & Development (Flask Backend API Merging Logic, Dockerization, Artifact Registry Pipeline, Deployment Scripts).
+
 📜 License & Acknowledgments
 Built for INFO 520 Data Communications (Fall 2026) at Virginia Commonwealth University. Powered by Google Cloud Platform.
 Gemini assistance for Read.me template, html template full citation:
